@@ -4,8 +4,7 @@ import { Request, Response } from "express"
 
 export class UpdateContainerController {
   async handle(request: Request, response: Response) {
-    const { id } = request.params;
-    const { id_cliente, Numero_container, Tipo_container, Status_container, Categoria_container } = request.body;
+    const { id, id_cliente, Numero_container, Tipo_container, Status_container, Categoria_container } = request.body;
 
     const service = new UpdateContainerService();
 

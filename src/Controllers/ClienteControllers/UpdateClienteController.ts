@@ -4,8 +4,7 @@ import { Request, Response } from "express"
 
 export class UpdateClinteController {
   async handle(request: Request, response: Response) {
-    const { id } = request.params;
-    const { Nome_cliente } = request.body;
+    const { id, Nome_cliente } = request.body;
 
     const service = new UpdateClienteService();
 

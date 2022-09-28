@@ -1,5 +1,4 @@
 import { DeleteClienteService } from './../../services/ClienteServices/DeleteClienteService';
-import { GetAllClientesService } from '../../services/ClienteServices/GetAllClientesService';
 import { Request, Response } from "express"
 
 

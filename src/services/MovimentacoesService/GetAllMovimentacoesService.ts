@@ -5,7 +5,9 @@ export class GetAllMovimentacoesService {
   async execute() {
     const repo = AppDataSource.getRepository<Movimentacao>(Movimentacao)
 
-    const movimentacao = await repo.find();
+    const movimentacao = await repo.find({
+      relations: ['cliente']
+    });
 
     return movimentacao;
 
